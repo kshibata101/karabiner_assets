@@ -341,6 +341,99 @@
             ]
         },
         {
+            "description": "Exchange < <=> (, > <=> )",
+            "manipulators": [
+                {
+                    "from": {
+                        "key_code": "comma",
+                        "modifiers": {
+                            "mandatory": [
+                                "shift"
+                            ],
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "9",
+                            "modifiers": [
+                                "shift"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "from": {
+                        "key_code": "period",
+                        "modifiers": {
+                            "mandatory": [
+                                "shift"
+                            ],
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "0",
+                            "modifiers": [
+                                "shift"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "from": {
+                        "key_code": "9",
+                        "modifiers": {
+                            "mandatory": [
+                                "shift"
+                            ],
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "comma",
+                            "modifiers": [
+                                "shift"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "from": {
+                        "key_code": "0",
+                        "modifiers": {
+                            "mandatory": [
+                                "shift"
+                            ],
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "period",
+                            "modifiers": [
+                                "shift"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        },
+        {
             "description": "Exchange [ <=> (, ] <=> )",
             "manipulators": [
                 {
