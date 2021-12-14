@@ -604,6 +604,63 @@
             ]
         },
         {
+            "description": "Exchange ? <=> under bar",
+            "manipulators": [
+                {
+                    "from": {
+                        "key_code": "slash",
+                        "modifiers": {
+                            "mandatory": [
+                                "shift"
+                            ],
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "hyphen",
+                            "modifiers": [
+                                "shift"
+                            ]
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "input_source_if",
+                            "input_sources": [
+                                { "language": "en" }
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "from": {
+                        "key_code": "hyphen",
+                        "modifiers": {
+                            "mandatory": [
+                                "shift"
+                            ],
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "slash",
+                            "modifiers": [
+                                "shift"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        },
+        {
             "description": "Exchange semicolon <=> under bar",
             "manipulators": [
                 {
@@ -755,7 +812,7 @@
             ]
         },
         {
-            "description": "Exchange quote <=> equal, double quote <=> plus",
+            "description": "Exchange quote <=> equal",
             "manipulators": [
                 {
                     "from": {
@@ -775,6 +832,29 @@
                     ],
                     "type": "basic"
                 },
+                {
+                    "from": {
+                        "key_code": "equal_sign",
+                        "modifiers": {
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "quote",
+                            "modifiers": [
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        },
+        {
+            "description": "Exchange double quote <=> plus",
+            "manipulators": [
                 {
                     "from": {
                         "key_code": "quote",
@@ -801,6 +881,9 @@
                     "from": {
                         "key_code": "equal_sign",
                         "modifiers": {
+                            "mandatory": [
+                                "shift"
+                            ],
                             "optional": [
                                 "caps_lock"
                             ]
@@ -810,6 +893,56 @@
                         {
                             "key_code": "quote",
                             "modifiers": [
+                                "shift"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        },
+        {
+            "description": "Exchange double quote => under bar, under bar => plus, plus => double quote",
+            "manipulators": [
+                {
+                    "from": {
+                        "key_code": "quote",
+                        "modifiers": {
+                            "mandatory": [
+                                "shift"
+                            ],
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "hyphen",
+                            "modifiers": [
+                                "shift"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "from": {
+                        "key_code": "hyphen",
+                        "modifiers": {
+                            "mandatory": [
+                                "shift"
+                            ],
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "equal_sign",
+                            "modifiers": [
+                                "shift"
                             ]
                         }
                     ],
